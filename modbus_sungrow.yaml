@@ -1331,7 +1331,7 @@ modbus:
 
       # old firmware ( before october 2024): always positive battery power
       # use binary_sensor.battery_charging | discharging to retrieve the direction of the energy flow
-      # new firmware: positive if charging and negative if discharging
+      # new firmware: negative if charging and positive if discharging
       # with new firmware installed we could use this raw value directly as signed battery power
       # to support both firmwares we use the template sensor "signed battery power"
       - name: Battery power raw
